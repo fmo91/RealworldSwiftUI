@@ -14,6 +14,11 @@
 		181BD226292BD4DB00882713 /* RealworldSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181BD225292BD4DB00882713 /* RealworldSwiftUITests.swift */; };
 		181BD230292BD4DB00882713 /* RealworldSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181BD22F292BD4DB00882713 /* RealworldSwiftUIUITests.swift */; };
 		181BD232292BD4DB00882713 /* RealworldSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181BD231292BD4DB00882713 /* RealworldSwiftUIUITestsLaunchTests.swift */; };
+		181BD241292BD58600882713 /* TabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181BD240292BD58600882713 /* TabScreen.swift */; };
+		181BD245292BD8CD00882713 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181BD244292BD8CD00882713 /* HomeScreen.swift */; };
+		181BD24A292BD8EB00882713 /* SearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181BD249292BD8EB00882713 /* SearchScreen.swift */; };
+		181BD24C292BD8F200882713 /* BookmarksScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181BD24B292BD8F200882713 /* BookmarksScreen.swift */; };
+		181BD24E292BD8F800882713 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181BD24D292BD8F800882713 /* ProfileScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		181BD22B292BD4DB00882713 /* RealworldSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealworldSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		181BD22F292BD4DB00882713 /* RealworldSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealworldSwiftUIUITests.swift; sourceTree = "<group>"; };
 		181BD231292BD4DB00882713 /* RealworldSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealworldSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		181BD240292BD58600882713 /* TabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabScreen.swift; sourceTree = "<group>"; };
+		181BD244292BD8CD00882713 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		181BD249292BD8EB00882713 /* SearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreen.swift; sourceTree = "<group>"; };
+		181BD24B292BD8F200882713 /* BookmarksScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksScreen.swift; sourceTree = "<group>"; };
+		181BD24D292BD8F800882713 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,7 @@
 		181BD213292BD4DA00882713 /* RealworldSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				181BD23E292BD56A00882713 /* UI */,
 				181BD214292BD4DA00882713 /* RealworldSwiftUIApp.swift */,
 				181BD216292BD4DA00882713 /* ContentView.swift */,
 				181BD218292BD4DB00882713 /* Assets.xcassets */,
@@ -125,6 +136,66 @@
 				181BD231292BD4DB00882713 /* RealworldSwiftUIUITestsLaunchTests.swift */,
 			);
 			path = RealworldSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		181BD23E292BD56A00882713 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				181BD23F292BD56E00882713 /* Initial */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		181BD23F292BD56E00882713 /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				181BD242292BD88800882713 /* Tabs */,
+				181BD240292BD58600882713 /* TabScreen.swift */,
+			);
+			path = Initial;
+			sourceTree = "<group>";
+		};
+		181BD242292BD88800882713 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				181BD243292BD8B100882713 /* Home */,
+				181BD246292BD8D400882713 /* Search */,
+				181BD247292BD8D900882713 /* Bookmarks */,
+				181BD248292BD8DE00882713 /* Profile */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		181BD243292BD8B100882713 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				181BD244292BD8CD00882713 /* HomeScreen.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		181BD246292BD8D400882713 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				181BD249292BD8EB00882713 /* SearchScreen.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		181BD247292BD8D900882713 /* Bookmarks */ = {
+			isa = PBXGroup;
+			children = (
+				181BD24B292BD8F200882713 /* BookmarksScreen.swift */,
+			);
+			path = Bookmarks;
+			sourceTree = "<group>";
+		};
+		181BD248292BD8DE00882713 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				181BD24D292BD8F800882713 /* ProfileScreen.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +328,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				181BD245292BD8CD00882713 /* HomeScreen.swift in Sources */,
+				181BD24E292BD8F800882713 /* ProfileScreen.swift in Sources */,
+				181BD24A292BD8EB00882713 /* SearchScreen.swift in Sources */,
 				181BD217292BD4DA00882713 /* ContentView.swift in Sources */,
+				181BD24C292BD8F200882713 /* BookmarksScreen.swift in Sources */,
 				181BD215292BD4DA00882713 /* RealworldSwiftUIApp.swift in Sources */,
+				181BD241292BD58600882713 /* TabScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
