@@ -8,8 +8,20 @@
 import SwiftUI
 
 struct HomeScreen: View {
+    @StateObject private var viewModel = HomeViewModel()
+    
     var body: some View {
-        Text("Home")
+        ScrollView {
+            LazyVStack(alignment: .leading) {
+                ForEach(viewModel.articles, id: \.title) { article in
+                    Text(article.title ?? "unnamed")
+                        .padding()
+                }
+            }
+        }
+        .task {
+            await viewModel.loadArticles()
+        }
     }
 }
 
