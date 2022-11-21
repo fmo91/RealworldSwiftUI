@@ -14,7 +14,10 @@ struct HomeScreen: View {
         ScrollView {
             LazyVStack(alignment: .leading) {
                 ForEach(viewModel.articles) { article in
-                    ArticleView(article: article)
+                    VStack(spacing: 3) {
+                        ArticleView(article: article)
+                        Divider()
+                    }
                 }
             }
         }
