@@ -24,6 +24,8 @@
 		181BD259292C086D00882713 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181BD258292C086D00882713 /* NetworkClient.swift */; };
 		181BD25B292C31BB00882713 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181BD25A292C31BB00882713 /* APIClient.swift */; };
 		181BD25E292C340500882713 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181BD25D292C340500882713 /* HomeViewModel.swift */; };
+		181BD260292C345F00882713 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181BD25F292C345F00882713 /* ArticleView.swift */; };
+		181BD262292C352900882713 /* Article+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181BD261292C352900882713 /* Article+Convenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		181BD258292C086D00882713 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		181BD25A292C31BB00882713 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		181BD25D292C340500882713 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		181BD25F292C345F00882713 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
+		181BD261292C352900882713 /* Article+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Article+Convenience.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +219,7 @@
 		181BD24F292BFF1C00882713 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				181BD25F292C345F00882713 /* ArticleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				181BD256292C060300882713 /* Article.swift */,
+				181BD261292C352900882713 /* Article+Convenience.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -393,7 +399,9 @@
 				181BD25E292C340500882713 /* HomeViewModel.swift in Sources */,
 				181BD217292BD4DA00882713 /* ContentView.swift in Sources */,
 				181BD24C292BD8F200882713 /* BookmarksScreen.swift in Sources */,
+				181BD262292C352900882713 /* Article+Convenience.swift in Sources */,
 				181BD215292BD4DA00882713 /* RealworldSwiftUIApp.swift in Sources */,
+				181BD260292C345F00882713 /* ArticleView.swift in Sources */,
 				181BD241292BD58600882713 /* TabScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

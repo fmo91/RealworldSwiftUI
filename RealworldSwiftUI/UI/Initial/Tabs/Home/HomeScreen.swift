@@ -13,9 +13,8 @@ struct HomeScreen: View {
     var body: some View {
         ScrollView {
             LazyVStack(alignment: .leading) {
-                ForEach(viewModel.articles, id: \.title) { article in
-                    Text(article.title ?? "unnamed")
-                        .padding()
+                ForEach(viewModel.articles) { article in
+                    ArticleView(article: article)
                 }
             }
         }
