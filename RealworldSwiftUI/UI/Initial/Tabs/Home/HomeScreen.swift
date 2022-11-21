@@ -11,15 +11,18 @@ struct HomeScreen: View {
     @StateObject private var viewModel = HomeViewModel()
     
     var body: some View {
-        ScrollView {
-            LazyVStack(alignment: .leading) {
-                ForEach(viewModel.articles) { article in
-                    VStack(spacing: 3) {
-                        ArticleView(article: article)
-                        Divider()
+        NavigationView {
+            ScrollView {
+                LazyVStack(alignment: .leading) {
+                    ForEach(viewModel.articles) { article in
+                        VStack(spacing: 3) {
+                            ArticleView(article: article)
+                            Divider()
+                        }
                     }
                 }
             }
+            .navigationTitle("Home")
         }
         .task {
             await viewModel.loadArticles()
