@@ -16,7 +16,14 @@ struct HomeScreen: View {
                 LazyVStack(alignment: .leading) {
                     ForEach(viewModel.articles) { article in
                         VStack(spacing: 3) {
-                            ArticleView(article: article)
+                            NavigationLink(
+                                destination: {
+                                    ArticleDetailScreen(article: article)
+                                },
+                                label: {
+                                    ArticleView(article: article)
+                                }
+                            ).buttonStyle(PlainButtonStyle())
                             Divider()
                         }
                     }
